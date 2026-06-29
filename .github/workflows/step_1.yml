@@ -8,9 +8,9 @@ jobs:
         steps:
             - name: Echo Hello
               run: echo "Hello, World!"
-            - name: Echo Hello
+            - name: Echo OS
               run: |
-                echo "Hello, World!"
-                echo "This is a multi-line echo command."
+                echo "Checking the operating system..."
+                echo "Running on: $RUNNER_OS"
     
 
