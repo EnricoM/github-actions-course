@@ -1,6 +1,6 @@
 name: 01- Building blocks
 
-on: workflow_dispatch
+on: push
 
 jobs:
     echo-hello:
@@ -8,5 +8,9 @@ jobs:
         steps:
             - name: Echo Hello
               run: echo "Hello, World!"
+            - name: Echo Hello
+              run: |
+                echo "Hello, World!"
+                echo "This is a multi-line echo command."
     
 
